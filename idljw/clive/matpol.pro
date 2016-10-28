@@ -1,0 +1,24 @@
+function matpol, r
+matpol=$
+[[$
+0.5,$
+Cos(2*r)/2.,$
+Sin(2*r)/2.,$
+0],$
+[$
+Cos(2*r)/2.,$
+Power(Cos(2*r),2)/2.,$
+(Cos(2*r)*Sin(2*r))/2.,$
+0],$
+[$
+Sin(2*r)/2.,$
+(Cos(2*r)*Sin(2*r))/2.,$
+Power(Sin(2*r),2)/2.,$
+0],$
+[$
+0,$
+0,$
+0,$
+0]]
+return,matpol
+end

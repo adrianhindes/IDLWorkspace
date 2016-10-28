@@ -1,0 +1,14 @@
+;restore,file='~/test.sav',/verb
+restore,file='~/save3.sav',/verb
+;filesbms=['/users/prl/cam112/bms98#h_h1.dat','/users/prl/cam112/bms97#h_c6.dat']
+filesbms=filesbms(0);,filesbms[1]]
+;filesbms='/home/cam112/adas/adas/adf21/bms98#h/bms98#h_h1.dat'
+;stop
+;t_e(29)=10.
+;n_e(*)=1e18
+;t_e(*)=1
+stop
+read_adf21,files=filesbms,data=data,$
+	   fraction=fraction,te=t_e,$
+	   dens=n_e/1.e6,energy=energy;,nocheck=nocheck
+end

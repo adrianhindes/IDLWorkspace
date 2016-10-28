@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbench version="2.0">
+<workbenchAdvisor/>
+<window height="486" maximized="true" width="988" x="47" y="24">
+<fastViewData fastViewLocation="1024">
+<orientation position="512" view="org.eclipse.debug.ui.DebugView"/>
+</fastViewData>
+<perspectiveBar>
+<itemSize x="160"/>
+</perspectiveBar>
+<coolbarLayout>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="271" y="63"/>
+<coolItem id="com.rsi.idldt.ui.textedit.toolbar" itemType="typeToolBarContribution" x="363" y="63"/>
+<coolItem id="com.rsi.idldt.ui.toolbar.debugTools" itemType="typeToolBarContribution" x="496" y="63"/>
+</coolbarLayout>
+<page aggregateWorkingSetId="Aggregate for window 1477277100163" focus="true" label="Workspace - IDL">
+<editors>
+<editorArea activeWorkbook="DefaultEditorWorkbook">
+<info part="DefaultEditorWorkbook">
+<folder appearance="1" expanded="2">
+<presentation id="org.eclipse.ui.internal.presentations.R21PresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="3"/>
+<part id="2"/>
+</presentation>
+</folder>
+</info>
+</editorArea>
+<editor id="com.rsi.idldt.proeditor.ProEditor" name="idlstartup.pro" partName="idlstartup.pro" title="idlstartup.pro" tooltip="/home/adrian/IDLWorkspace85/idljw/idlstartup.pro" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/home/adrian/IDLWorkspace85/idljw/idlstartup.pro"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="447" selectionTopPixel="0"/>
+</editor>
+<editor id="com.rsi.idldt.proeditor.ProEditor" name="flow_profile.pro" partName="flow_profile.pro" title="flow_profile.pro" tooltip="/home/adrian/IDLWorkspace85/idljw/work/flow_profile.pro" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/home/adrian/IDLWorkspace85/idljw/work/flow_profile.pro"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="199" selectionTopPixel="767"/>
+</editor>
+<editor id="com.rsi.idldt.proeditor.ProEditor" name="select_time.pro" partName="select_time.pro" title="select_time.pro" tooltip="/home/adrian/IDLWorkspace85/idljw/ijwkim/jw_routines/select_time.pro" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/home/adrian/IDLWorkspace85/idljw/ijwkim/jw_routines/select_time.pro"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="192" selectionTopPixel="0"/>
+</editor>
+<editor activePart="true" focus="true" id="com.rsi.idldt.proeditor.ProEditor" name="magpie_profile_radial.pro" partName="magpie_profile_radial.pro" path="/home/adrian/IDLWorkspace85/Default/magpie_profile_radial.pro" title="magpie_profile_radial.pro" tooltip="Default/magpie_profile_radial.pro" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Default/magpie_profile_radial.pro"/>
+<editorState selectionHorizontalPixel="0" selectionLength="58" selectionOffset="2523" selectionTopPixel="778"/>
+</editor>
+</editors>
+<views>
+<view id="com.rsi.idldt.ui.views.CommandHistoryView" partName="Command History">
+<viewState columnWidth0="200" grp200="1" showTreeView="1" sortColumn="1" sortDirection="128"/>
+</view>
+<view id="com.rsi.idldt.console.IDLConsoleView" partName="IDL Console">
+<viewState/>
+</view>
+<view id="org.eclipse.debug.ui.DebugView" partName="Debug">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.ProblemView" partName="Problems">
+<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<expanded>
+<category IMemento.internal.id="Warnings (4 items)"/>
+</expanded>
+<columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="605" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
+</viewState>
+</view>
+<view id="org.eclipse.debug.ui.VariableView" partName="Variables">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
+<viewState/>
+</view>
+</views>
+<perspectives activePart="com.rsi.idldt.console.IDLConsoleView" activePerspective="com.rsi.idldt.ui.IDLPerspective">
+<perspective editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="com.rsi.idldt.internal.ui.IDLPerspectiveFactory" id="com.rsi.idldt.ui.IDLPerspective" label="IDL"/>
+<alwaysOnActionSet id="com.rsi.idldt.ui.actionSets.CmdLine"/>
+<alwaysOnActionSet id="com.rsi.idldt.ui.actionSets.Run"/>
+<alwaysOnActionSet id="com.rsi.idldt.ui.actionSets.Wizard"/>
+<alwaysOnActionSet id="com.rsi.idldt.ui.actionSets.Help"/>
+<alwaysOnActionSet id="com.rsi.idldt.ui.MacroActionSet"/>
+<alwaysOnActionSet id="com.rsi.idldt.tasks.actionSets.Wizard"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="com.rsi.idldt.ui.CodingActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.debugActionSet"/>
+<show_view_action id="org.eclipse.search.ui.views.SearchView"/>
+<show_view_action id="org.eclipse.ui.views.ProblemView"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<show_view_action id="org.eclipse.ui.views.BookmarkView"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="com.rsi.idldt.console.IDLConsoleView"/>
+<view id="com.rsi.idldt.ui.views.CommandHistoryView"/>
+<view id="org.eclipse.ui.views.ProblemView"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="org.eclipse.debug.ui.VariableView"/>
+<fastViews>
+<view id="org.eclipse.debug.ui.DebugView" ratio="0.3"/>
+</fastViews>
+<fastViewBars/>
+<layout>
+<mainWindow>
+<info folder="true" part="left">
+<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
+<page content="org.eclipse.ui.navigator.ProjectExplorer" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.internal.presentations.R21PresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.7495049" ratioLeft="757" ratioRight="253" relationship="2" relative="left">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+</folder>
+</info>
+<info part="com.rsi.idldt.HierarchyView" ratio="0.7" ratioLeft="707" ratioRight="303" relationship="2" relative="left"/>
+<info folder="true" part="bottom" ratio="0.69984204" ratioLeft="443" ratioRight="190" relationship="4" relative="left">
+<folder activePageID="com.rsi.idldt.console.IDLConsoleView" appearance="2" expanded="2">
+<page content="com.rsi.idldt.console.IDLConsoleView" label="IDL Console"/>
+<page content="com.rsi.idldt.ui.views.CommandHistoryView" label="Command History"/>
+<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
+<page content="org.eclipse.debug.ui.BreakpointView" label="LabelNotFound"/>
+<page content="*" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.internal.presentations.R21PresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+</presentation>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.27920792" ratioLeft="282" ratioRight="728" relationship="2" relative="left"/>
+</mainWindow>
+</layout>
+</perspective>
+</perspectives>
+<workingSets/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" uri="file:/home/adrian/IDLWorkspace85/idljw/idlstartup.pro"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" uri="file:/home/adrian/IDLWorkspace85/idljw/work/flow_profile.pro"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" uri="file:/home/adrian/IDLWorkspace85/idljw/work/magpie_profile_new.pro"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" uri="file:/home/adrian/IDLWorkspace85/idljw/ijwkim/jw_routines/idl_magpie/phys_quantity.pro"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" uri="file:/home/adrian/IDLWorkspace85/idljw/work/magpie_profile_4.pro"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" uri="file:/home/adrian/IDLWorkspace85/idljw/ijwkim/jw_routines/idl_magpie/magpie_data.pro"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" uri="file:/home/adrian/IDLWorkspace85/idljw/work/magpie_profile_4.pro"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" uri="file:/home/adrian/IDLWorkspace85/idljw/ijwkim/jw_routines/idl_magpie/magpie_data.pro"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" uri="file:/home/adrian/IDLWorkspace85/idljw/ijwkim/jw_routines/select_time.pro"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" uri="file:/home/adrian/IDLWorkspace85/idljw/work/magpie_profile_new.pro"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" uri="file:/home/adrian/IDLWorkspace85/idljw/idlstartup.pro"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" uri="file:/home/adrian/IDLWorkspace85/idljw/ijwkim/jw_routines/select_time.pro"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" path="/Default/magpie_profile_radial.pro"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" uri="file:/home/adrian/IDLWorkspace85/idljw/work/flow_profile.pro"/>
+</editors>
+<item historyLabel="idlstartup.pro" index="0">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="flow_profile.pro" index="1">
+<position info="not_deleted" x="199" y="0"/>
+</item>
+<item historyLabel="idlstartup.pro" index="0">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="magpie_profile_new.pro" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="phys_quantity.pro" index="3">
+<position info="not_deleted" x="1492" y="0"/>
+</item>
+<item historyLabel="magpie_profile_new.pro" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="magpie_profile_4.pro" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="phys_quantity.pro" index="3">
+<position info="not_deleted" x="1492" y="0"/>
+</item>
+<item historyLabel="magpie_profile_4.pro" index="4">
+<position info="not_deleted" x="35" y="0"/>
+</item>
+<item historyLabel="phys_quantity.pro" index="3">
+<position info="not_deleted" x="1185" y="11"/>
+</item>
+<item historyLabel="magpie_data.pro" index="5">
+<position info="not_deleted" x="123" y="0"/>
+</item>
+<item historyLabel="magpie_profile_4.pro" index="4">
+<position info="not_deleted" x="68" y="0"/>
+</item>
+<item historyLabel="phys_quantity.pro" index="3">
+<position info="not_deleted" x="1492" y="0"/>
+</item>
+<item historyLabel="magpie_profile_4.pro" index="6">
+<position info="not_deleted" x="68" y="0"/>
+</item>
+<item historyLabel="phys_quantity.pro" index="3">
+<position info="not_deleted" x="1492" y="0"/>
+</item>
+<item historyLabel="magpie_data.pro" index="7">
+<position info="not_deleted" x="1342" y="0"/>
+</item>
+<item historyLabel="magpie_profile_4.pro" index="6">
+<position info="not_deleted" x="68" y="0"/>
+</item>
+<item historyLabel="phys_quantity.pro" index="3">
+<position info="not_deleted" x="1492" y="0"/>
+</item>
+<item historyLabel="magpie_data.pro" index="7">
+<position info="not_deleted" x="1342" y="0"/>
+</item>
+<item historyLabel="phys_quantity.pro" index="3">
+<position info="not_deleted" x="1492" y="0"/>
+</item>
+<item historyLabel="magpie_profile_4.pro" index="6">
+<position info="not_deleted" x="68" y="0"/>
+</item>
+<item historyLabel="magpie_profile_4.pro" index="6">
+<position info="not_deleted" x="2246" y="11"/>
+</item>
+<item historyLabel="select_time.pro" index="8">
+<position info="not_deleted" x="9" y="11"/>
+</item>
+<item historyLabel="magpie_profile_new.pro" index="9">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="magpie_profile_new.pro" index="9">
+<position info="not_deleted" x="2360" y="0"/>
+</item>
+<item historyLabel="magpie_profile_new.pro" index="9">
+<position info="not_deleted" x="2356" y="0"/>
+</item>
+<item historyLabel="idlstartup.pro" index="10">
+<position info="not_deleted" x="447" y="0"/>
+</item>
+<item historyLabel="select_time.pro" index="11">
+<position info="not_deleted" x="305" y="0"/>
+</item>
+<item historyLabel="magpie_profile_radial.pro" index="12">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="magpie_profile_radial.pro" index="12">
+<position info="not_deleted" x="81" y="0"/>
+</item>
+<item historyLabel="magpie_profile_radial.pro" index="12">
+<position info="not_deleted" x="2513" y="0"/>
+</item>
+<item historyLabel="magpie_profile_radial.pro" index="12">
+<position info="not_deleted" x="1771" y="11"/>
+</item>
+<item historyLabel="select_time.pro" index="11">
+<position info="not_deleted" x="9" y="11"/>
+</item>
+<item historyLabel="flow_profile.pro" index="13">
+<position info="not_deleted" x="199" y="0"/>
+</item>
+<item historyLabel="magpie_profile_radial.pro" index="12">
+<position info="not_deleted" x="1771" y="11"/>
+</item>
+<item historyLabel="select_time.pro" index="11">
+<position info="not_deleted" x="101" y="0"/>
+</item>
+<item historyLabel="magpie_profile_radial.pro" index="12">
+<position info="not_deleted" x="1818" y="0"/>
+</item>
+<item historyLabel="flow_profile.pro" index="13">
+<position info="not_deleted" x="199" y="0"/>
+</item>
+<item historyLabel="select_time.pro" index="11">
+<position info="not_deleted" x="101" y="0"/>
+</item>
+<item historyLabel="magpie_profile_radial.pro" index="12">
+<position info="not_deleted" x="1818" y="0"/>
+</item>
+<item historyLabel="select_time.pro" index="11">
+<position info="not_deleted" x="192" y="0"/>
+</item>
+<item historyLabel="magpie_profile_radial.pro" index="12">
+<position info="not_deleted" x="1818" y="0"/>
+</item>
+<item historyLabel="magpie_profile_radial.pro" index="12">
+<position info="not_deleted" x="1277" y="0"/>
+</item>
+<item historyLabel="magpie_profile_radial.pro" index="12">
+<position info="not_deleted" x="2513" y="0"/>
+</item>
+<item active="true" historyLabel="magpie_profile_radial.pro" index="12">
+<position info="not_deleted" x="2796" y="0"/>
+</item>
+</navigationHistory>
+<input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
+</page>
+<workbenchWindowAdvisor/>
+<actionBarAdvisor/>
+<trimLayout>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.PerspectiveSwitcher"/>
+</trimArea>
+<trimArea IMemento.internal.id="128">
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
+</trimArea>
+<trimArea IMemento.internal.id="1024">
+<trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
+<trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+</trimArea>
+</trimLayout>
+</window>
+<mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" name="magpie_profile_radial.pro" tooltip="Default/magpie_profile_radial.pro">
+<persistable path="/Default/magpie_profile_radial.pro"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" name="select_time.pro" tooltip="/home/adrian/IDLWorkspace85/idljw/ijwkim/jw_routines/select_time.pro">
+<persistable uri="file:/home/adrian/IDLWorkspace85/idljw/ijwkim/jw_routines/select_time.pro"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" name="magpie_data.pro" tooltip="/home/adrian/IDLWorkspace85/idljw/ijwkim/jw_routines/idl_magpie/magpie_data.pro">
+<persistable uri="file:/home/adrian/IDLWorkspace85/idljw/ijwkim/jw_routines/idl_magpie/magpie_data.pro"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" name="phys_quantity.pro" tooltip="/home/adrian/IDLWorkspace85/idljw/ijwkim/jw_routines/idl_magpie/phys_quantity.pro">
+<persistable uri="file:/home/adrian/IDLWorkspace85/idljw/ijwkim/jw_routines/idl_magpie/phys_quantity.pro"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" name="magpie_profile_4.pro" tooltip="/home/adrian/IDLWorkspace85/idljw/work/magpie_profile_4.pro">
+<persistable uri="file:/home/adrian/IDLWorkspace85/idljw/work/magpie_profile_4.pro"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" name="magpie_profile_new.pro" tooltip="/home/adrian/IDLWorkspace85/idljw/work/magpie_profile_new.pro">
+<persistable uri="file:/home/adrian/IDLWorkspace85/idljw/work/magpie_profile_new.pro"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" name="flow_profile.pro" tooltip="/home/adrian/IDLWorkspace85/idljw/work/flow_profile.pro">
+<persistable uri="file:/home/adrian/IDLWorkspace85/idljw/work/flow_profile.pro"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" name="idlstartup.pro" tooltip="/home/adrian/IDLWorkspace85/idljw/idlstartup.pro">
+<persistable uri="file:/home/adrian/IDLWorkspace85/idljw/idlstartup.pro"/>
+</file>
+</mruList>
+</workbench>
