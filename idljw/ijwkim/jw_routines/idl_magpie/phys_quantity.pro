@@ -1,7 +1,7 @@
 function phys_quantity, shot_number,gas_type=gas_type,discharge_time = discharge_time
   common share2, mean_temp, mean_isat, cspeed_tmp, vacuum_permittivity, boltzmann_si, e_charge
   default, gas_type, 'hydrogen'
-  default, discharge_time, 0.3
+  default, discharge_time, 0.1
   
   area_isat = 5.80E-3*!Pi*0.20E-3+!PI*(0.10E-3)^2.0
   area_isat_rot = 6.10E-3*!Pi*0.20E-3+!PI*(0.10E-3)^2.0
@@ -16,19 +16,39 @@ function phys_quantity, shot_number,gas_type=gas_type,discharge_time = discharge
   boltzmann_ev = 8.617332E-5
   charge_state = 1.D
   
+  
+  if gas_type eq 'argon' then begin
+    m_species = m_i_argon
+  endif else begin
+    m_species = m_i_hydrogen
+  endelse
+  
+  
   if shot_number ge 1911L then begin
     isat_sign = -1.D
   endif else begin
     isat_sign = 1.D
   end
   
-  cspeed_tmp = sqrt(boltzmann_si*charge_state/m_i_hydrogen)
+  if shot_number ge 7498 then begin
+    isat_sign = 1.D
+  endif
+  
+  cspeed_tmp = sqrt(boltzmann_si*charge_state/m_species)
 
   ionize_0_1_temp = [1.723E-01, 4.308E-01, 8.617E-01, 1.723E+00, 4.308E+00, 8.617E+00, 1.723E+01, 4.308E+01, 8.617E+01, 1.723E+02, 4.308E+02, 8.617E+02]
   ionize_0_1 = [1.000E-36, 1.230E-23, 1.782E-15, 2.426E-11, 7.985E-09, 5.440E-08, 1.382E-07, 2.355E-07, 2.803E-07, 3.247E-07, 5.391E-07, 8.127E-07]
   
-  trange = [0.0, discharge_time*1.1]
-  background = [discharge_time*1.1, discharge_time*1.19]
+  trange = [0.0, discharge_time]
+  background = [discharge_time*1.1, discharge_time*1.5]
+  
+  if shot_number ge 7760 then begin
+    discharge_time = 0.05
+    trange = [0.0, discharge_time]
+    background = [discharge_time*1.1, discharge_time*1.15]
+  endif
+  
+
   
   isat = magpie_data('probe_isat',shot_number)
   vfloat = magpie_data('probe_vfloat',shot_number)
@@ -59,43 +79,50 @@ function phys_quantity, shot_number,gas_type=gas_type,discharge_time = discharge
     isat_resistance = 400.0
   endif
   
+  ;Gain, use lab book notes from experiment(s) to ensure correct isat scaling
+  
+  ;volts/div
+  
   isolation_amplifier = 1.0
-  if shot_number ge 6964 then begin
+  if shot_number ge 6769 then begin
+    isolation_amplifier = 1.0 ;1/5
+  endif
+  if shot_number ge 6907 then begin
     isolation_amplifier = 2
   endif
+  if shot_number ge 7270 then begin
+    isolation_amplifier = 2 
+  endif
+  if shot_number ge 7324 then begin
+    isolation_amplifier = 0.1
+  endif
+  if shot_number ge 7351 then begin
+    isolation_amplifier = 0.5
+  endif
+  if shot_number ge 7378 then begin
+    isolation_amplifier = 10
+  endif
+  if shot_number ge 7895 then begin
+    isolation_amplifier = 0.2
+  endif
+  
   real_isat = (isat_cut.yvector-mean(isat_back.yvector))/isat_resistance*isolation_amplifier
-  real_vfloat = (vfloat_cut.yvector-mean(vfloat_back.yvector));/5.*1003./3.
-  real_vplus = (vplus_cut.yvector-mean(vplus_back.yvector));/5.*1003./3.
+  real_vfloat = (vfloat_cut.yvector-mean(vfloat_back.yvector))/10.*1003./3.
+  real_vplus = (vplus_cut.yvector-mean(vplus_back.yvector))/10.*1003./3. ;10 gain, 1003 resistor, 3 resistors
   
   real_isat_rot = (isat_rot_cut.yvector-mean(isat_rot_back.yvector));/400.
-  real_vfloat_rot = (vfloat_rot_cut.yvector-mean(vfloat_rot_back.yvector));/5.*1003./3.
+  real_vfloat_rot = (vfloat_rot_cut.yvector-mean(vfloat_rot_back.yvector))/10.*1003./3.
   
-  real_pmt = pmt_cut.yvector-mean(pmt_back.yvector)
+  real_pmt = pmt_cut.yvector-mean(pmt_back.yvector)/10.*1003./3.
   
   temp = abs((real_vfloat-real_vplus)/alog(2));*11604)
   dens = real_isat/area_isat/e_charge/cspeed_tmp/sqrt(temp)
   dens_sqrt_temp = real_isat/area_isat/e_charge/cspeed_tmp
-  vplasma = real_vfloat+boltzmann_si*temp/e_charge/2.0*alog(2.0*m_i_hydrogen/!pi/m_e)
+  vplasma = real_vfloat+boltzmann_si*temp/e_charge/2.0*alog(2.0*m_species/!pi/m_e)
   
-;  x = 1.5E16
-;  mean_temp = mean(temp)
-;  mean_isat = mean(real_isat)
-;  solve = NEWTON(x,'density_eq')
-;  print, 'newton method : ', solve
-  
-;  ycplot, isat_cut.tvector,real_vfloat,out_base_id = oid
-;  ycplot, isat_cut.tvector,vplasma,oplot_id = oid
-;  ycplot, isat_cut.tvector,real_vplus,oplot_id = oid
-;  ycplot, isat_cut.tvector, vplasma-real_vfloat, oplot_id = oid
+
   
   result = CREATE_STRUCT('tvector',isat_cut.tvector,'temp',temp,'dens',dens,'vplasma',vplasma,'isat',real_isat, $
-    'vfloat',real_vfloat,'vplus',real_vplus,'isat_rot',real_isat_rot,'vfloat_rot',real_vfloat_rot,'pmt',real_pmt,'location',isat.location)
+    'vfloat',real_vfloat,'vplus',real_vplus,'isat_rot',real_isat_rot,'vfloat_rot',real_vfloat_rot,'pmt',real_pmt,'location',isat.location,'ptime',trange,'btime',background)
   return, result
 end
-
-;function density_eq, X
-;  common share2
-;;  print, 'cspeed_tmp : ', cspeed_tmp
-;  return, cspeed_tmp*sqrt(mean_temp)*(5.80E-3*!Pi*(0.20E-3+4*sqrt(vacuum_permittivity*boltzmann_si*mean_temp/e_charge^2)/sqrt(X[0])) $
-;    +2*!PI*(0.10E-3+2*sqrt(vacuum_permittivity*boltzmann_si*mean_temp/e_charge^2)/sqrt(X[0]))^2.0)*e_charge*X[0] -mean_isat
-;end

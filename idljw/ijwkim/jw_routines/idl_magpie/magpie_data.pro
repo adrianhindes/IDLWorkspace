@@ -2,7 +2,8 @@ function magpie_data, diag, shot_number
 ; ex: d = magpie_data('single_pmt',13)
 
 result = {err:0, errmsg:''}
-path='/h1magpie'
+;path='/h1magpie'
+path='/media/adrian/Elements/magpie'
 single_pmt_file = path+'/single_pmt/'+string(shot_number, format='(i05)') + '.bin'
 probe1_file = path+'/probe_isat/'+string(shot_number, format='(i05)') + '.bin'
 probe2_file = path+'/probe_vfloat/'+string(shot_number, format='(i05)') + '.bin'

@@ -16,8 +16,9 @@
 	<section name="RecentWorkingDirectories">
 		<list key="RecentWorkingDirsList">
 			<item value="/home/adrian"/>
-			<item value="/home/adrian/IDLWorkspace85"/>
 			<item value="/home/adrian/IDLWorkspace85/Default"/>
+			<item value="/home/adrian/IDLWorkspace85"/>
+			<item value="/"/>
 		</list>
 	</section>
 	<section name="NewIdlProjectWizard">

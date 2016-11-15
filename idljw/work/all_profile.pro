@@ -1,5 +1,5 @@
 pro all_profile
-pro magpie_profile_5
+
 
 points_num = 23
 
