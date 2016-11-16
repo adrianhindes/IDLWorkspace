@@ -123,6 +123,7 @@ function phys_quantity, shot_number,gas_type=gas_type,discharge_time = discharge
 
   
   result = CREATE_STRUCT('tvector',isat_cut.tvector,'temp',temp,'dens',dens,'vplasma',vplasma,'isat',real_isat, $
-    'vfloat',real_vfloat,'vplus',real_vplus,'isat_rot',real_isat_rot,'vfloat_rot',real_vfloat_rot,'pmt',real_pmt,'location',isat.location,'ptime',trange,'btime',background)
+    'vfloat',real_vfloat,'vplus',real_vplus,'isat_rot',real_isat_rot,'vfloat_rot',real_vfloat_rot, $
+    'pmt',real_pmt,'location',isat.location,'ptime',trange,'btime',background)
   return, result
 end

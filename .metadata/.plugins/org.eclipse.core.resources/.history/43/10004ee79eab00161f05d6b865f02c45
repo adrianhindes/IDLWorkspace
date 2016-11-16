@@ -1,0 +1,20 @@
+function dataPoints, shot=shot
+;Input shot number, output how many data points to expect,
+;for a single pass (not whole average, so *3)
+
+
+;Default
+points_num = 18 ;18*3 (3 measurements per angle), total 54 measurements
+
+
+if start_shot ge 7214 then begin
+  points_num = 9 ;9*3 = 27 measurements total for second set
+endif
+
+if start_shot ge 7760 then begin
+  points_num = 10 ;9*3 = 30 measurements total for third set
+endif
+
+return,points_num
+
+end
