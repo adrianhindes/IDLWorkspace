@@ -130,7 +130,7 @@ window,1
 window,2
   plot, probe_degrees, vplasma_avg, title =exTitle+' Plasma Potential',xtitle=xlab,ytitle='Voltage (V)',psym=4
 window,3
-  plot, probe_degrees, isat_avg, title =exTitle+'ISat',xtitle=xlab,ytitle=oin'Current (mA)',psym=4
+  plot, probe_degrees, isat_avg, title =exTitle+'ISat',xtitle=xlab,ytitle='Current (mA)',psym=4
 
   stop
 

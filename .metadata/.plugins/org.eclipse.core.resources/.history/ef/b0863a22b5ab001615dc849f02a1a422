@@ -12,7 +12,7 @@ if checkDir eq 0 then begin
   file_mkdir,exTitle
 endif
 
-cd,exTitle
+cd exTitle
 
 startShots = [7760,7790,7820,7850]
 k = n_elements(startShots)

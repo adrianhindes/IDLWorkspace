@@ -12,7 +12,7 @@ if checkDir eq 0 then begin
   file_mkdir,exTitle
 endif
 
-cd,exTitle
+cd exTitle
 
 startShots = [7760,7790,7820,7850]
 k = n_elements(startShots)
@@ -61,7 +61,6 @@ for i = 0, m-1 do begin ;for each data type
   minPoints[i] = min(minBuffer)
 endfor
 
-;Set ranges
 minRange=minPoints-stddevs
 maxRange=maxPoints+stddevs
 
@@ -70,8 +69,7 @@ maxRange=maxPoints+stddevs
 for j = 0, m-1 do begin
 window,j
 mkfig,'~/'+exTitle+'/fig_'+yAxTitles[j],xsize=13,ysize=10,font_size=9
-plot,xAxis,series[j,*,0],psym=1,xtitle=xAxTitle,ytitle=yAxTitles[j]+yAxUnits[j],title=exTitle+yAxTitles[j],$
-yrange=[minRange,maxRange]
+plot,xAxis,series[j,*,0],psym=1,xtitle=xAxTitle,ytitle=yAxTitles[j]+yAxUnits[j],title=exTitle+yAxTitles[j]
   for i = 1, k-1 do begin
 oplot,xAxis,series[j,*,i],psym=i+1
 endfig

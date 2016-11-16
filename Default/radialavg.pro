@@ -1,4 +1,4 @@
-function radialAvg, shot=shot
+function radialAvg,shot
 
 ;Adapted from magpie_profile_radial_avg
 ;Input shot number, output 5 arrays of x axis and averaged data from experiments
@@ -9,7 +9,7 @@ function radialAvg, shot=shot
   setNum =  [1,2,3]
   start_shot = shot
   
-  points_num = dataPoints(start_shot)
+  points_num = dataPoints(shot=start_shot)
   
   
   temp=dblarr(points_num,3)
@@ -94,7 +94,7 @@ isat[*,k]=isat_ax_mean
 
 ;Three averages, print status for each done
 measPrint = ['One','Two','Three']
-print, ('done measurement' + measPrint[k])
+print, ('Done measurement ' + measPrint[k])
 
 
 endfor ;end of big loop
@@ -111,8 +111,8 @@ dens_avg = (dens[*,0]+dens[*,1]+dens[*,2])/3.
 vplasma_avg = (vplasma[*,0]+vplasma[*,1]+vplasma[*,2])/3.
 isat_avg = (isat[*,0]+isat[*,1]+isat[*,2])/3.
 
-result = create_struct('temp',temp_avg,'density',dens_avg,'vplasma',vplasma_avg,'isat',isat_avg)
+result = create_struct('temp',temp_avg,'density',dens_avg,'vplasma',vplasma_avg,'isat',isat_avg,'xaxis',probe_degrees)
 
-return,[result,probe_degrees]
+return,result
 
 end
