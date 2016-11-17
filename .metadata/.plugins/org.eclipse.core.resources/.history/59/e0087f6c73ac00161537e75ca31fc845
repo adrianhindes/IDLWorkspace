@@ -23,15 +23,15 @@ title3 = '3KW RF Hydrogen at 8.4mTorr'
 title4 = '1KW RF Hydrogen at 4.1mTorr
 title5 = '10KW RF Hydrogen at 4.2mTorr'
 
-sourceStart = ['Z=1','Z=2','Z=3','Z=4']
-pinchStart = reverse(sourceStart)
-
 loopSet = [set1,set2,set3,set4,set5]
 loopTitle = [title1,title2,title3,title4,title5]
 loopZ = [pinchStart,sourceStart,pinchStart,sourceStart,pinchStart]
+sourceStart = ['Z=1','Z=2','Z=3','Z=4']
+pinchStart = reverse(sourceStart)
+
 
 ;Begin Processing
-experiment = 2;1 (broken)
+experiment = 1
 
 exTitle=loopTitle[experiment-1]
 startShots = loopSet[experiment-1]

@@ -2,40 +2,11 @@ pro overplotResults
 
 ;Use radial avg function to overplot sets of data from experiments
 ;Experiment Title?
-
+exTitle='1KW RF Hydrogen at 4.1mTorr'
 
 device,decomp=0
 path='~/Dropbox/ASC2Plots/'
 cd,path
-
-
-
-;field 400A
-set1 = [7328,7408,7438,7468] ;3KW RF Hydrogen at 4.2mTorr pinch
-set2 = [7498,7528,7558,7588] ;3KW RF Hydrogen at 2.1mTorr source
-set3 = [7618,7648,7678,7708] ;3KW RF Hydrogen at 8.4mTorr pinch
-set4 = [7760,7790,7820,7850] ;1KW RF Hydrogen at 4.1mTorr source
-set5 = [7895,7925,7949,7979] ;10KW RF Hydrogen at 4.2mTorr pinch
-
-title1 = '3KW RF Hydrogen at 4.2mTorr'
-title2 = '3KW RF Hydrogen at 2.1mTorr'
-title3 = '3KW RF Hydrogen at 8.4mTorr'
-title4 = '1KW RF Hydrogen at 4.1mTorr
-title5 = '10KW RF Hydrogen at 4.2mTorr'
-
-sourceStart = ['Z=1','Z=2','Z=3','Z=4']
-pinchStart = reverse(sourceStart)
-
-loopSet = [set1,set2,set3,set4,set5]
-loopTitle = [title1,title2,title3,title4,title5]
-loopZ = [pinchStart,sourceStart,pinchStart,sourceStart,pinchStart]
-
-;Begin Processing
-experiment = 2;1 (broken)
-
-exTitle=loopTitle[experiment-1]
-startShots = loopSet[experiment-1]
-labels= loopZ[experiment-1]
 
 checkDir = file_test(exTitle)
 if checkDir eq 0 then begin
@@ -44,8 +15,7 @@ endif
 
 cd,exTitle
 
-
-
+startShots = [7760,7790,7820,7850]
 k = n_elements(startShots)
 
 numPoints = dataPoints(shot=startShots[0])
@@ -95,13 +65,11 @@ endfor
 ;Set ranges
 minRange=minPoints-stddevs
 maxRange=maxPoints+stddevs
-minRange[0] = 0
-minRange[1] = 0
-minRange[3] = 0
+
 
 ;Plotting
 
-cols=['k','b','r','g']
+cols=[k,b,r,g]
 
 for j = 0, m-1 do begin
 fileName= path+exTitle+'/fig'+yAxTitles[j]+'.eps'
@@ -109,15 +77,15 @@ fileName= path+exTitle+'/fig'+yAxTitles[j]+'.eps'
   mkfig,fileName,xsize=13,ysize=10,font_size=9
 
   plot,xAxis,series[j,*,0],psym=1,xtitle=xAxTitle,ytitle=yAxTitles[j]+yAxUnits[j],title=exTitle+yAxTitles[j],$
-  yrange=[minRange[j],maxRange[j]],thick=3
+  yrange=[0,maxRange[j]]
 
     for i = 1, k-1 do begin
-      oplot,xAxis,series[j,*,i],psym=1,color=2+i,thick=3
+      oplot,xAxis,series[j,*,i],psym=i+1,color=string(cols[i])
     endfor
-  legend,labels,psym=1,colors=[1,2,3,4],/right_legend,charthick=3
+  
   endfig
 
 endfor
 
- stop
+stop
 end
