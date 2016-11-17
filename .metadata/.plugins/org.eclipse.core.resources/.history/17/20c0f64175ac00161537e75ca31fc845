@@ -12,7 +12,7 @@ pro magpie_profile_radial_avg
   
   
   setNum =  [1,2,3]
-  start_shot = 7328
+  start_shot = 7850
   
   points_num = 18 ;18*3 (3 measurements per angle), total 54 measurements
 

@@ -4,7 +4,7 @@ pro overplotResults
 ;Experiment Title?
 
 
-
+device,decomp=0
 path='~/Dropbox/ASC2Plots/'
 cd,path
 
@@ -26,16 +26,16 @@ title5 = '10KW RF Hydrogen at 4.2mTorr'
 sourceStart = ['Z=1','Z=2','Z=3','Z=4']
 pinchStart = reverse(sourceStart)
 
-titles = [title1,title2,title3,title4,title5]
-
+loopSet = [set1,set2,set3,set4,set5]
+loopTitle = [title1,title2,title3,title4,title5]
+loopZ = [pinchStart,sourceStart,pinchStart,sourceStart,pinchStart]
 
 ;Begin Processing
-experiment = 2;1,4 done
+experiment = 3;1 (broken)
 
-exTitle=titles[experiment-1]
-startShots = set1
-labels= pinchStart
-
+exTitle=loopTitle[experiment-1]
+startShots = loopSet[experiment-1]
+labels= loopZ[experiment-1]
 
 checkDir = file_test(exTitle)
 if checkDir eq 0 then begin
@@ -44,14 +44,15 @@ endif
 
 cd,exTitle
 
+
+
 k = n_elements(startShots)
 
 numPoints = dataPoints(shot=startShots[0])
 
 ;dataset Ordering: temp, density, vplasma, isat
-;Series array = [dataSet,data,experiment]
 series = dblarr(4,numPoints,k)
-
+;Series array = [dataSet,data,experiment]
 
 for i = 0, k-1 do begin
   print,'Begun processing Experiment',string(i+1)
@@ -96,17 +97,18 @@ minRange=minPoints-stddevs
 maxRange=maxPoints+stddevs
 minRange[0] = 0
 minRange[1] = 0
+minRange[3] = 0
 
 ;Plotting
-device,decomp=0
+
 cols=['k','b','r','g']
 
 for j = 0, m-1 do begin
 fileName= path+exTitle+'/fig'+yAxTitles[j]+'.eps'
 
-mkfig,fileName,xsize=13,ysize=10,font_size=9
+  mkfig,fileName,xsize=13,ysize=10,font_size=9
 
-  plot,xAxis,series[j,*,0],psym=1,xtitle=xAxTitle,ytitle=yAxTitles[j]+yAxUnits[j],title=exTitle+' '+yAxTitles[j],$
+  plot,xAxis,series[j,*,0],psym=1,xtitle=xAxTitle,ytitle=yAxTitles[j]+yAxUnits[j],title=exTitle+yAxTitles[j],$
   yrange=[minRange[j],maxRange[j]],thick=3
 
     for i = 1, k-1 do begin

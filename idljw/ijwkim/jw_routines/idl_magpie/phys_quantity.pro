@@ -26,12 +26,10 @@ function phys_quantity, shot_number,gas_type=gas_type,discharge_time = discharge
   
   if shot_number ge 1911L then begin
     isat_sign = -1.D
-  endif else begin
-    isat_sign = 1.D
-  end
+  endif 
   
   if shot_number ge 7498 then begin
-    isat_sign = 1.D
+    
   endif
   
   cspeed_tmp = sqrt(boltzmann_si*charge_state/m_species)
@@ -42,8 +40,9 @@ function phys_quantity, shot_number,gas_type=gas_type,discharge_time = discharge
   trange = [0.0, discharge_time]
   background = [discharge_time*1.1, discharge_time*1.5]
   
-  if shot_number ge 7760 then begin
+  if shot_number ge 7328 then begin
     discharge_time = 0.05
+    isat_sign = 1.D
     trange = [0.0, discharge_time]
     background = [discharge_time*1.1, discharge_time*1.15]
   endif

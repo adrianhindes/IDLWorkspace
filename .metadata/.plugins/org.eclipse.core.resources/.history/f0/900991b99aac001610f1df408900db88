@@ -30,7 +30,7 @@ titles = [title1,title2,title3,title4,title5]
 
 
 ;Begin Processing
-experiment = 2;1,4 done
+experiment = 1;4 done
 
 exTitle=titles[experiment-1]
 startShots = set1
@@ -96,6 +96,7 @@ minRange=minPoints-stddevs
 maxRange=maxPoints+stddevs
 minRange[0] = 0
 minRange[1] = 0
+minRange[3] = 0
 
 ;Plotting
 device,decomp=0

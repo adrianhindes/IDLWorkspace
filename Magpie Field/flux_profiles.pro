@@ -149,7 +149,6 @@ length = length * 1E-2
 vol = A*length ;volume
 del_ni = n_i/radius
 
-cylA = 2*!pi*radius*length
 
 ;Neutral density
 ;p = 1E3 ;Torr
