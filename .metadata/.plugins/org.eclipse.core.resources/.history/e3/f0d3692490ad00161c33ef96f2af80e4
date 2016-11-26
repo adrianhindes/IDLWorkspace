@@ -1,14 +1,18 @@
 pro overplotResults
 
 ;Use radial avg function to overplot sets of data from experiments
-;Experiment Title?
 
 
+domain=1 ;0 for angle, 1 if radial
 
-path='~/Dropbox/ASC2Plots/'
+
+if domain eq 1 then begin
+  path = '~/Dropbox/Reports/ASC2/ASC2Plots/Radial/'
+endif else begin
+  path='~/Dropbox/Reports/ASC2/ASC2Plots/Degrees/'
+endelse
+
 cd,path
-
-
 
 ;field 400A
 set1 = [7328,7408,7438,7468] ;3KW RF Hydrogen at 4.2mTorr pinch
@@ -17,24 +21,37 @@ set3 = [7618,7648,7678,7708] ;3KW RF Hydrogen at 8.4mTorr pinch
 set4 = [7760,7790,7820,7850] ;1KW RF Hydrogen at 4.1mTorr source
 set5 = [7895,7925,7949,7979] ;10KW RF Hydrogen at 4.2mTorr pinch
 
+;rectify to source -> pinch order
+set1 = reverse(set1)
+set3 = reverse(set3)
+set5 = reverse(set5)
+
+argonShot=[6826,6934]
+argonz=['No Mode','Mode on']
+
 title1 = '3KW RF Hydrogen at 4.2mTorr'
 title2 = '3KW RF Hydrogen at 2.1mTorr'
 title3 = '3KW RF Hydrogen at 8.4mTorr'
 title4 = '1KW RF Hydrogen at 4.1mTorr
 title5 = '10KW RF Hydrogen at 4.2mTorr'
 
-sourceStart = ['Z=1','Z=2','Z=3','Z=4']
-pinchStart = reverse(sourceStart)
+argonTitle='Argon Mode Comparison'
+
+labels = ['Z=1 (Source)','Z=2','Z=3 (Pinch)','Z=4'] ;5cm displacement each
+
 
 titles = [title1,title2,title3,title4,title5]
 
 
 ;Begin Processing
-experiment = 1;4 done
+;CHECK startShots and labels before running!
+experiment = 5
+startShots = argonShot ;<-- check number!
+exTitle=argonTitle
 
-exTitle=titles[experiment-1]
-startShots = set1
-labels= pinchStart
+
+;exTitle=titles[experiment-1]
+
 
 
 checkDir = file_test(exTitle)
@@ -55,7 +72,7 @@ series = dblarr(4,numPoints,k)
 
 for i = 0, k-1 do begin
   print,'Begun processing Experiment',string(i+1)
-  result = radialAvg(startShots[i])
+  result = radialAvg(startShots[i],xdom=domain)
   xAxis = result.xaxis
   
   series[0,*,i] = result.temp
@@ -66,7 +83,14 @@ for i = 0, k-1 do begin
 endfor
 
 m=4 ; 4 data types temp, density, vplasma, isat
-xAxTitle='Degrees'
+
+if domain eq 1 then begin
+  xAxTitle='Radial Location from Plasma Centre (cm)'
+endif else begin
+  xAxTitle = 'Degrees'
+endelse
+
+
 yAxTitles=['Temperature','Density','Vplasma',' I-Sat']
 yAxUnits=[' (eV)',' (m^-3)',' (V)',' (mA)']
 
@@ -81,10 +105,10 @@ maxBuffer=maxPoints
 minBuffer=minPoints
 
 for i = 0, m-1 do begin ;for each data type
-  for k = 0, k-1 do begin ; for each experiment
-    wiggleRooms[k] = stddev(series[i,*,k])
-    maxBuffer[k] = max(series[i,*,k])
-    minBuffer[k] = min(series[i,*,k])
+  for a = 0, k-1 do begin ; for each experiment
+    wiggleRooms[a] = stddev(series[i,*,a])
+    maxBuffer[a] = max(series[i,*,a])
+    minBuffer[a] = min(series[i,*,a])
   endfor
   stddevs[i] = max(wiggleRooms)
   maxPoints[i] = max(maxBuffer)
@@ -96,27 +120,29 @@ minRange=minPoints-stddevs
 maxRange=maxPoints+stddevs
 minRange[0] = 0
 minRange[1] = 0
-minRange[3] = 0
 
 ;Plotting
 device,decomp=0
-cols=['k','b','r','g']
 
+
+colors=[1,2,3,4]
+
+
+xAxis = 1000
 for j = 0, m-1 do begin
 fileName= path+exTitle+'/fig'+yAxTitles[j]+'.eps'
 
 mkfig,fileName,xsize=13,ysize=10,font_size=9
 
   plot,xAxis,series[j,*,0],psym=1,xtitle=xAxTitle,ytitle=yAxTitles[j]+yAxUnits[j],title=exTitle+' '+yAxTitles[j],$
-  yrange=[minRange[j],maxRange[j]],thick=3
-
+  yrange=[minRange[j],maxRange[j]],thick=3,col=colors[0]
     for i = 1, k-1 do begin
-      oplot,xAxis,series[j,*,i],psym=1,color=2+i,thick=3
+      oplot,xAxis,series[j,*,i],psym=1,color=colors[i],thick=3
     endfor
-  legend,labels,psym=1,colors=[1,2,3,4],/right_legend,charthick=3
+  legend,argonz,psym=1,colors=[1,2],/right_legend,charthick=3
   endfig
 
 endfor
 
- stop
+
 end

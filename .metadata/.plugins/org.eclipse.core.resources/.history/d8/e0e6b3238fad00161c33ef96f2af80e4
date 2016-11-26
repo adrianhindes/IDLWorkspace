@@ -7,9 +7,9 @@ domain=1 ;0 for angle, 1 if radial
 
 
 if domain eq 1 then begin
-  path = '~/Dropbox/Reports/ASC2/ASC2Plots/Radial/'
+  path = '~/Dropbox/ASC2Plots/Radial/'
 endif else begin
-  path='~/Dropbox/Reports/ASC2/ASC2Plots/Degrees/'
+  path='~/Dropbox/ASC2Plots/Degrees/'
 endelse
 
 cd,path
@@ -144,5 +144,5 @@ mkfig,fileName,xsize=13,ysize=10,font_size=9
 
 endfor
 
-stop
+
 end

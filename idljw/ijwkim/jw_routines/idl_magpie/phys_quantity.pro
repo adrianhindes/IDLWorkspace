@@ -32,11 +32,8 @@ function phys_quantity, shot_number,gas_type=gas_type,discharge_time = discharge
     
   endif
   
-  cspeed_tmp = sqrt(boltzmann_si*charge_state/m_species)
+  cspeed_tmp = sqrt(11604*boltzmann_si*charge_state/m_species)
 
-  ionize_0_1_temp = [1.723E-01, 4.308E-01, 8.617E-01, 1.723E+00, 4.308E+00, 8.617E+00, 1.723E+01, 4.308E+01, 8.617E+01, 1.723E+02, 4.308E+02, 8.617E+02]
-  ionize_0_1 = [1.000E-36, 1.230E-23, 1.782E-15, 2.426E-11, 7.985E-09, 5.440E-08, 1.382E-07, 2.355E-07, 2.803E-07, 3.247E-07, 5.391E-07, 8.127E-07]
-  
   trange = [0.0, discharge_time]
   background = [discharge_time*1.1, discharge_time*1.5]
   
@@ -82,15 +79,23 @@ function phys_quantity, shot_number,gas_type=gas_type,discharge_time = discharge
   
   ;volts/div
   
+
+
   isolation_amplifier = 1.0
+  
   if shot_number ge 6769 then begin
-    isolation_amplifier = 1.0 ;1/5
+    isolation_amplifier = 0.5
   endif
   if shot_number ge 6907 then begin
-    isolation_amplifier = 2
+    isolation_amplifier = 0.2
   endif
+  
+;Bunch of isolation amp testing shots
   if shot_number ge 7270 then begin
     isolation_amplifier = 2 
+  endif
+  if shot_number ge 7297 then begin
+    isolation_amplifier = 0.5
   endif
   if shot_number ge 7324 then begin
     isolation_amplifier = 0.1
@@ -98,14 +103,17 @@ function phys_quantity, shot_number,gas_type=gas_type,discharge_time = discharge
   if shot_number ge 7351 then begin
     isolation_amplifier = 0.5
   endif
-  if shot_number ge 7378 then begin
-    isolation_amplifier = 10
-  endif
-  if shot_number ge 7895 then begin
-    isolation_amplifier = 0.2
+  if shot_number ge 7328 then begin
+    isolation_amplifier = 0.1
   endif
   
-  real_isat = (isat_cut.yvector-mean(isat_back.yvector))/isat_resistance*isolation_amplifier
+;10KW
+  if shot_number ge 7895 then begin
+    isolation_amplifier = 5
+  endif
+  
+  
+  real_isat = (isat_cut.yvector-mean(isat_back.yvector))/isat_resistance*isolation_amplifier*10
   real_vfloat = (vfloat_cut.yvector-mean(vfloat_back.yvector))/10.*1003./3.
   real_vplus = (vplus_cut.yvector-mean(vplus_back.yvector))/10.*1003./3. ;10 gain, 1003 resistor, 3 resistors
   

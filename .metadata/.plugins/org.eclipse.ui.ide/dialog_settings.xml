@@ -15,14 +15,16 @@
 	</list>
 	<section name="RecentWorkingDirectories">
 		<list key="RecentWorkingDirsList">
-			<item value="/home/adrian/Dropbox/ASC2Plots/1KW RF Hydrogen at 4.1mTorr"/>
-			<item value="/home/adrian/Dropbox/ASC2Plots"/>
 			<item value="/home/adrian"/>
-			<item value="/home/adrian/Dropbox"/>
-			<item value="/home/adrian/Documents"/>
-			<item value="/home/adrian/IDLWorkspace85/Default"/>
-			<item value="/home/adrian/IDLWorkspace85"/>
-			<item value="/"/>
+			<item value="/media/adrian/Elements/camware"/>
+			<item value="/home/adrian/Dropbox/ASC2Plots/Radial/Argon Mode Comparison"/>
+			<item value="/home/adrian/Dropbox/ASC2Plots/Radial"/>
+			<item value="/home/adrian/Dropbox/ASC2Plots/Radial/10KW RF Hydrogen at 4.2mTorr"/>
+			<item value="/home/adrian/Dropbox/ASC2Plots/Radial/1KW RF Hydrogen at 4.1mTorr"/>
+			<item value="/home/adrian/Dropbox/ASC2Plots/Radial/3KW RF Hydrogen at 8.4mTorr"/>
+			<item value="/home/adrian/Dropbox/ASC2Plots/Radial/3KW RF Hydrogen at 2.1mTorr"/>
+			<item value="/home/adrian/Dropbox/ASC2Plots/Radial/3KW RF Hydrogen at 4.2mTorr"/>
+			<item value="/home/adrian/Dropbox/ASC2Plots/Radial/Argon No Mode Experiment"/>
 		</list>
 	</section>
 	<section name="NewIdlProjectWizard">

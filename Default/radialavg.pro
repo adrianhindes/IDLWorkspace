@@ -1,11 +1,11 @@
-function radialAvg,shot
-
+function radialAvg,shot,xdom=xdom
+default, xdom,0
 ;Adapted from magpie_profile_radial_avg
 ;Input shot number, output 5 arrays of x axis and averaged data from experiments
 
 ;Write experiment title here for plot
  
- 
+
   setNum =  [1,2,3]
   start_shot = shot
   
@@ -59,7 +59,7 @@ for k = 0, 2 do begin
   endif
   
 probe_radians = probe_degrees * !DtoR
-
+probe_ax_location=probe_radians
 ;Process Data
 
   radius = 3 ;length of probe end shaft, defining radius traced
@@ -77,7 +77,7 @@ probe_radians = probe_degrees * !DtoR
     isat_ax_mean[i] = mean(isat_cut.yvector)
 
 ;Currently broken lol
-;probe_ax_location[i] = sqrt( (radius*cos(probe_radians[i]))^2+(yoff-radius*sin(probe_radians[i]))^2   )
+probe_ax_location[i] = sqrt( (radius*cos(probe_radians[i]))^2+(yoff-radius*sin(probe_radians[i]))^2   )
     
     endfor
 
@@ -111,7 +111,14 @@ dens_avg = (dens[*,0]+dens[*,1]+dens[*,2])/3.
 vplasma_avg = (vplasma[*,0]+vplasma[*,1]+vplasma[*,2])/3.
 isat_avg = (isat[*,0]+isat[*,1]+isat[*,2])/3.
 
-result = create_struct('temp',temp_avg,'density',dens_avg,'vplasma',vplasma_avg,'isat',isat_avg,'xaxis',probe_degrees)
+if xdom eq 1 then begin
+domain = probe_ax_location
+endif else begin
+domain = probe_degrees
+endelse
+
+result = create_struct('temp',temp_avg,'density',dens_avg,'vplasma',vplasma_avg,'isat',isat_avg,$
+  'xaxis',domain)
 
 return,result
 

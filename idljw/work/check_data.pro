@@ -1,6 +1,6 @@
 pro check_data
-shot1 = 7328  ;6826
-shot2 = 7348 ;6974
+shot1 = 7558  ;6826
+shot2 = 7568 ;6974
 
 isat1 = magpie_data('probe_isat',shot1)
 vplus1  = magpie_data('probe_vplus',shot1)

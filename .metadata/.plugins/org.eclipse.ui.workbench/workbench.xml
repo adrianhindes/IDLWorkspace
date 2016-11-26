@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workbench version="2.0">
 <workbenchAdvisor/>
-<window height="58" maximized="true" width="940" x="47" y="24">
+<window height="26" maximized="true" width="910" x="0" y="0">
 <fastViewData fastViewLocation="1024">
 <orientation position="512" view="org.eclipse.debug.ui.DebugView"/>
 </fastViewData>
@@ -9,9 +9,9 @@
 <itemSize x="160"/>
 </perspectiveBar>
 <coolbarLayout>
-<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="271" y="63"/>
-<coolItem id="com.rsi.idldt.ui.textedit.toolbar" itemType="typeToolBarContribution" x="363" y="63"/>
-<coolItem id="com.rsi.idldt.ui.toolbar.debugTools" itemType="typeToolBarContribution" x="496" y="63"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="224" y="58"/>
+<coolItem id="com.rsi.idldt.ui.textedit.toolbar" itemType="typeToolBarContribution" x="316" y="58"/>
+<coolItem id="com.rsi.idldt.ui.toolbar.debugTools" itemType="typeToolBarContribution" x="440" y="58"/>
 </coolbarLayout>
 <page aggregateWorkingSetId="Aggregate for window 1477277100163" focus="true" label="Workspace - IDL">
 <editors>
@@ -30,33 +30,33 @@
 </folder>
 </info>
 </editorArea>
-<editor id="com.rsi.idldt.proeditor.ProEditor" name="phys_quantity.pro" partName="phys_quantity.pro" title="phys_quantity.pro" tooltip="/home/adrian/IDLWorkspace85/idljw/ijwkim/jw_routines/idl_magpie/phys_quantity.pro" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/home/adrian/IDLWorkspace85/idljw/ijwkim/jw_routines/idl_magpie/phys_quantity.pro"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3207" selectionTopPixel="1333"/>
-</editor>
 <editor id="com.rsi.idldt.proeditor.ProEditor" name="check_data.pro" partName="check_data.pro" title="check_data.pro" tooltip="/home/adrian/IDLWorkspace85/idljw/work/check_data.pro" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/home/adrian/IDLWorkspace85/idljw/work/check_data.pro"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="73" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="514" selectionTopPixel="0"/>
 </editor>
-<editor id="com.rsi.idldt.proeditor.ProEditor" name="magpie_profile_radial_avg.pro" partName="magpie_profile_radial_avg.pro" path="/home/adrian/IDLWorkspace85/Default/magpie_profile_radial_avg.pro" title="magpie_profile_radial_avg.pro" tooltip="Default/magpie_profile_radial_avg.pro" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Default/magpie_profile_radial_avg.pro"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4172" selectionTopPixel="500"/>
-</editor>
-<editor id="com.rsi.idldt.proeditor.ProEditor" name="ycplot.pro" partName="ycplot.pro" title="ycplot.pro" tooltip="/home/adrian/IDLWorkspace85/idljw/ycghim/yc_routines/ycplot.pro" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/home/adrian/IDLWorkspace85/idljw/ycghim/yc_routines/ycplot.pro"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="309" selectionTopPixel="956"/>
-</editor>
-<editor id="com.rsi.idldt.proeditor.ProEditor" name="magpie_profile_6.pro" partName="magpie_profile_6.pro" title="magpie_profile_6.pro" tooltip="/home/adrian/IDLWorkspace85/idljw/work/magpie_profile_6.pro" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/home/adrian/IDLWorkspace85/idljw/work/magpie_profile_6.pro"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3400" selectionTopPixel="1153"/>
-</editor>
-<editor activePart="true" focus="true" id="com.rsi.idldt.proeditor.ProEditor" name="overplotresults.pro" partName="overplotresults.pro" path="/home/adrian/IDLWorkspace85/Default/overplotresults.pro" title="overplotresults.pro" tooltip="Default/overplotresults.pro" workbook="DefaultEditorWorkbook">
+<editor id="com.rsi.idldt.proeditor.ProEditor" name="overplotresults.pro" partName="overplotresults.pro" path="/home/adrian/IDLWorkspace85/Default/overplotresults.pro" title="overplotresults.pro" tooltip="Default/overplotresults.pro" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Default/overplotresults.pro"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2150" selectionTopPixel="868"/>
+<editorState selectionHorizontalPixel="0" selectionLength="9" selectionOffset="1660" selectionTopPixel="843"/>
 </editor>
-<editor id="com.rsi.idldt.proeditor.ProEditor" name="magpie_data.pro" partName="magpie_data.pro" title="magpie_data.pro" tooltip="/home/adrian/IDLWorkspace85/idljw/ijwkim/jw_routines/idl_magpie/magpie_data.pro" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/home/adrian/IDLWorkspace85/idljw/ijwkim/jw_routines/idl_magpie/magpie_data.pro"/>
-<editorState selectionHorizontalPixel="0" selectionLength="11" selectionOffset="9" selectionTopPixel="0"/>
+<editor id="com.rsi.idldt.proeditor.ProEditor" name="datapoints.pro" partName="datapoints.pro" path="/home/adrian/IDLWorkspace85/Default/datapoints.pro" title="datapoints.pro" tooltip="Default/datapoints.pro" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Default/datapoints.pro"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="438" selectionTopPixel="0"/>
+</editor>
+<editor id="com.rsi.idldt.proeditor.ProEditor" name="magpie_profile_radial.pro" partName="magpie_profile_radial.pro" path="/home/adrian/IDLWorkspace85/Default/magpie_profile_radial.pro" title="magpie_profile_radial.pro" tooltip="Default/magpie_profile_radial.pro" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Default/magpie_profile_radial.pro"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="385" selectionTopPixel="0"/>
+</editor>
+<editor id="com.rsi.idldt.proeditor.ProEditor" name="radialavg.pro" partName="radialavg.pro" path="/home/adrian/IDLWorkspace85/Default/radialavg.pro" title="radialavg.pro" tooltip="Default/radialavg.pro" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Default/radialavg.pro"/>
+<editorState selectionHorizontalPixel="0" selectionLength="13" selectionOffset="945" selectionTopPixel="496"/>
+</editor>
+<editor id="com.rsi.idldt.proeditor.ProEditor" name="phys_quantity.pro" partName="phys_quantity.pro" title="phys_quantity.pro" tooltip="/home/adrian/IDLWorkspace85/idljw/ijwkim/jw_routines/idl_magpie/phys_quantity.pro" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/home/adrian/IDLWorkspace85/idljw/ijwkim/jw_routines/idl_magpie/phys_quantity.pro"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="928" selectionTopPixel="280"/>
+</editor>
+<editor activePart="true" focus="true" id="com.rsi.idldt.proeditor.ProEditor" name="emissiondata.pro" partName="emissiondata.pro" path="/home/adrian/IDLWorkspace85/Default/emissiondata.pro" title="emissiondata.pro" tooltip="Default/emissiondata.pro" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Default/emissiondata.pro"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="205" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -68,9 +68,6 @@
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>
-<category IMemento.internal.id="Warnings (10 items)"/>
-</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="605" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -86,7 +83,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="com.rsi.idldt.proeditor.ProEditor" activePerspective="com.rsi.idldt.ui.IDLPerspective">
+<perspectives activePart="com.rsi.idldt.console.IDLConsoleView" activePerspective="com.rsi.idldt.ui.IDLPerspective">
 <perspective editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="com.rsi.idldt.internal.ui.IDLPerspectiveFactory" id="com.rsi.idldt.ui.IDLPerspective" label="IDL"/>
 <alwaysOnActionSet id="com.rsi.idldt.ui.actionSets.CmdLine"/>
@@ -155,7 +152,7 @@
 </presentation>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.27920792" ratioLeft="282" ratioRight="728" relationship="2" relative="left"/>
+<info part="org.eclipse.ui.editorss" ratio="0.22143975" ratioLeft="283" ratioRight="995" relationship="2" relative="left"/>
 </mainWindow>
 </layout>
 </perspective>
@@ -163,166 +160,162 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" path="/Default/magpie_profile_radial_avg.pro"/>
-<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" uri="file:/home/adrian/IDLWorkspace85/idljw/ijwkim/jw_routines/idl_magpie/phys_quantity.pro"/>
-<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" uri="file:/home/adrian/IDLWorkspace85/idljw/work/magpie_profile_6.pro"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" path="/Default/magpie_profile_radial.pro"/>
-<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" uri="file:/home/adrian/IDLWorkspace85/idljw/work/check_data.pro"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" path="/Default/overplotresults.pro"/>
-<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" uri="file:/home/adrian/IDLWorkspace85/idljw/clive/common/mkfig.pro"/>
-<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" uri="file:/usr/local/exelis/idl85/lib/tek_color.pro"/>
-<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" uri="file:/home/adrian/IDLWorkspace85/idljw/haitao_IDL/Default/mkfig.pro"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" uri="file:/home/adrian/IDLWorkspace85/idljw/ijwkim/jw_routines/idl_magpie/phys_quantity.pro"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" uri="file:/home/adrian/IDLWorkspace85/idljw/ycghim/Hungary_BES_code/FLIPP/legend.pro"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" path="/Default/radialavg.pro"/>
 <editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" uri="file:/home/adrian/IDLWorkspace85/idljw/ijwkim/jw_routines/idl_magpie/magpie_data.pro"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" path="/Default/emissiondata.pro"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" path="/Default/datapoints.pro"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" uri="file:/home/adrian/IDLWorkspace85/Misc/arraydims.pro"/>
 </editors>
-<item historyLabel="magpie_profile_radial_avg.pro" index="0">
-<position info="not_deleted" x="4169" y="0"/>
+<item historyLabel="phys_quantity.pro" index="2">
+<position info="not_deleted" x="4021" y="0"/>
 </item>
-<item historyLabel="phys_quantity.pro" index="1">
-<position info="not_deleted" x="3207" y="0"/>
+<item historyLabel="overplotresults.pro" index="1">
+<position info="not_deleted" x="1246" y="0"/>
 </item>
-<item historyLabel="magpie_profile_6.pro" index="2">
-<position info="not_deleted" x="3257" y="3"/>
+<item historyLabel="overplotresults.pro" index="1">
+<position info="not_deleted" x="3383" y="6"/>
 </item>
-<item historyLabel="phys_quantity.pro" index="1">
-<position info="not_deleted" x="3207" y="0"/>
+<item historyLabel="legend.pro" index="3">
+<position info="not_deleted" x="12529" y="6"/>
 </item>
-<item historyLabel="magpie_profile_radial_avg.pro" index="0">
-<position info="not_deleted" x="4172" y="0"/>
+<item historyLabel="overplotresults.pro" index="1">
+<position info="not_deleted" x="3009" y="0"/>
 </item>
-<item historyLabel="magpie_profile_radial.pro" index="3">
-<position info="not_deleted" x="3596" y="0"/>
+<item historyLabel="overplotresults.pro" index="1">
+<position info="not_deleted" x="3462" y="0"/>
 </item>
-<item historyLabel="phys_quantity.pro" index="1">
-<position info="not_deleted" x="3207" y="0"/>
+<item historyLabel="overplotresults.pro" index="1">
+<position info="not_deleted" x="1185" y="0"/>
 </item>
-<item historyLabel="check_data.pro" index="4">
-<position info="not_deleted" x="656" y="0"/>
+<item historyLabel="overplotresults.pro" index="1">
+<position info="not_deleted" x="3462" y="0"/>
 </item>
-<item historyLabel="overplotresults.pro" index="5">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="overplotresults.pro" index="1">
+<position info="not_deleted" x="1246" y="0"/>
 </item>
-<item historyLabel="overplotresults.pro" index="5">
-<position info="not_deleted" x="1765" y="5"/>
+<item historyLabel="overplotresults.pro" index="1">
+<position info="not_deleted" x="1278" y="0"/>
 </item>
-<item historyLabel="mkfig.pro" index="6">
-<position info="not_deleted" x="307" y="0"/>
+<item historyLabel="magpie_profile_radial.pro" index="0">
+<position info="not_deleted" x="385" y="0"/>
 </item>
-<item historyLabel="overplotresults.pro" index="5">
-<position info="not_deleted" x="1996" y="0"/>
+<item historyLabel="overplotresults.pro" index="1">
+<position info="not_deleted" x="1660" y="9"/>
 </item>
-<item historyLabel="mkfig.pro" index="6">
-<position info="not_deleted" x="367" y="9"/>
+<item historyLabel="radialavg.pro" index="4">
+<position info="not_deleted" x="945" y="13"/>
 </item>
-<item historyLabel="tek_color.pro" index="7">
-<position info="not_deleted" x="271" y="0"/>
+<item historyLabel="phys_quantity.pro" index="2">
+<position info="not_deleted" x="1320" y="11"/>
 </item>
-<item historyLabel="mkfig.pro" index="6">
-<position info="not_deleted" x="367" y="9"/>
-</item>
-<item historyLabel="magpie_profile_radial.pro" index="3">
-<position info="not_deleted" x="3596" y="0"/>
-</item>
-<item historyLabel="phys_quantity.pro" index="1">
-<position info="not_deleted" x="3207" y="0"/>
-</item>
-<item historyLabel="check_data.pro" index="4">
-<position info="not_deleted" x="656" y="0"/>
-</item>
-<item historyLabel="magpie_profile_radial_avg.pro" index="0">
-<position info="not_deleted" x="4172" y="0"/>
-</item>
-<item historyLabel="magpie_profile_6.pro" index="2">
-<position info="not_deleted" x="3257" y="3"/>
-</item>
-<item historyLabel="magpie_profile_radial_avg.pro" index="0">
-<position info="not_deleted" x="4172" y="0"/>
-</item>
-<item historyLabel="magpie_profile_radial.pro" index="3">
-<position info="not_deleted" x="3596" y="0"/>
-</item>
-<item historyLabel="magpie_profile_radial_avg.pro" index="0">
-<position info="not_deleted" x="4172" y="0"/>
-</item>
-<item historyLabel="overplotresults.pro" index="5">
-<position info="not_deleted" x="1996" y="0"/>
-</item>
-<item historyLabel="magpie_profile_6.pro" index="2">
-<position info="not_deleted" x="3400" y="0"/>
-</item>
-<item historyLabel="overplotresults.pro" index="5">
-<position info="not_deleted" x="2047" y="0"/>
-</item>
-<item historyLabel="mkfig.pro" index="8">
-<position info="not_deleted" x="553" y="0"/>
-</item>
-<item historyLabel="overplotresults.pro" index="5">
-<position info="not_deleted" x="182" y="0"/>
-</item>
-<item historyLabel="magpie_profile_6.pro" index="2">
-<position info="not_deleted" x="3400" y="0"/>
-</item>
-<item historyLabel="check_data.pro" index="4">
-<position info="not_deleted" x="656" y="0"/>
-</item>
-<item historyLabel="phys_quantity.pro" index="1">
-<position info="not_deleted" x="3207" y="0"/>
-</item>
-<item historyLabel="check_data.pro" index="4">
-<position info="not_deleted" x="73" y="0"/>
-</item>
-<item historyLabel="magpie_data.pro" index="9">
+<item historyLabel="magpie_data.pro" index="5">
 <position info="not_deleted" x="9" y="11"/>
 </item>
-<item historyLabel="overplotresults.pro" index="5">
-<position info="not_deleted" x="182" y="0"/>
+<item historyLabel="phys_quantity.pro" index="2">
+<position info="not_deleted" x="3312" y="0"/>
 </item>
-<item historyLabel="overplotresults.pro" index="5">
-<position info="not_deleted" x="272" y="0"/>
+<item historyLabel="emissiondata.pro" index="6">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="overplotresults.pro" index="5">
-<position info="not_deleted" x="1756" y="0"/>
+<item historyLabel="emissiondata.pro" index="6">
+<position info="not_deleted" x="602" y="0"/>
 </item>
-<item historyLabel="overplotresults.pro" index="5">
-<position info="not_deleted" x="2070" y="0"/>
+<item historyLabel="emissiondata.pro" index="6">
+<position info="not_deleted" x="222" y="0"/>
 </item>
-<item historyLabel="overplotresults.pro" index="5">
-<position info="not_deleted" x="2146" y="0"/>
+<item historyLabel="emissiondata.pro" index="6">
+<position info="not_deleted" x="63" y="0"/>
 </item>
-<item historyLabel="overplotresults.pro" index="5">
-<position info="not_deleted" x="2138" y="0"/>
+<item historyLabel="emissiondata.pro" index="6">
+<position info="not_deleted" x="222" y="0"/>
 </item>
-<item historyLabel="overplotresults.pro" index="5">
-<position info="not_deleted" x="2146" y="0"/>
+<item historyLabel="emissiondata.pro" index="6">
+<position info="not_deleted" x="24" y="0"/>
 </item>
-<item historyLabel="overplotresults.pro" index="5">
-<position info="not_deleted" x="2138" y="0"/>
+<item historyLabel="emissiondata.pro" index="6">
+<position info="not_deleted" x="211" y="0"/>
 </item>
-<item historyLabel="overplotresults.pro" index="5">
-<position info="not_deleted" x="2138" y="0"/>
+<item historyLabel="emissiondata.pro" index="6">
+<position info="not_deleted" x="212" y="0"/>
 </item>
-<item historyLabel="overplotresults.pro" index="5">
-<position info="not_deleted" x="1781" y="0"/>
+<item historyLabel="emissiondata.pro" index="6">
+<position info="not_deleted" x="63" y="0"/>
 </item>
-<item historyLabel="overplotresults.pro" index="5">
-<position info="not_deleted" x="1783" y="0"/>
+<item historyLabel="emissiondata.pro" index="6">
+<position info="not_deleted" x="56" y="0"/>
 </item>
-<item historyLabel="overplotresults.pro" index="5">
-<position info="not_deleted" x="2047" y="0"/>
+<item historyLabel="emissiondata.pro" index="6">
+<position info="not_deleted" x="63" y="0"/>
 </item>
-<item historyLabel="overplotresults.pro" index="5">
-<position info="not_deleted" x="2049" y="0"/>
+<item historyLabel="emissiondata.pro" index="6">
+<position info="not_deleted" x="211" y="0"/>
 </item>
-<item historyLabel="overplotresults.pro" index="5">
-<position info="not_deleted" x="2120" y="0"/>
+<item historyLabel="emissiondata.pro" index="6">
+<position/>
 </item>
-<item historyLabel="overplotresults.pro" index="5">
-<position info="not_deleted" x="2122" y="0"/>
+<item historyLabel="emissiondata.pro" index="6">
+<position info="not_deleted" x="601" y="0"/>
 </item>
-<item historyLabel="overplotresults.pro" index="5">
-<position info="not_deleted" x="2136" y="0"/>
+<item historyLabel="phys_quantity.pro" index="2">
+<position info="not_deleted" x="3312" y="0"/>
 </item>
-<item active="true" historyLabel="overplotresults.pro" index="5">
-<position info="not_deleted" x="2138" y="0"/>
+<item historyLabel="radialavg.pro" index="4">
+<position info="not_deleted" x="945" y="13"/>
+</item>
+<item historyLabel="magpie_profile_radial.pro" index="0">
+<position info="not_deleted" x="385" y="0"/>
+</item>
+<item historyLabel="datapoints.pro" index="7">
+<position info="not_deleted" x="438" y="0"/>
+</item>
+<item historyLabel="phys_quantity.pro" index="2">
+<position info="not_deleted" x="3312" y="0"/>
+</item>
+<item historyLabel="emissiondata.pro" index="6">
+<position info="not_deleted" x="601" y="0"/>
+</item>
+<item historyLabel="emissiondata.pro" index="6">
+<position info="not_deleted" x="211" y="0"/>
+</item>
+<item historyLabel="emissiondata.pro" index="6">
+<position/>
+</item>
+<item historyLabel="arraydims.pro" index="8">
+<position info="not_deleted" x="9" y="9"/>
+</item>
+<item historyLabel="emissiondata.pro" index="6">
+<position/>
+</item>
+<item historyLabel="arraydims.pro" index="8">
+<position info="not_deleted" x="294" y="0"/>
+</item>
+<item historyLabel="emissiondata.pro" index="6">
+<position info="not_deleted" x="557" y="0"/>
+</item>
+<item historyLabel="emissiondata.pro" index="6">
+<position info="not_deleted" x="211" y="0"/>
+</item>
+<item historyLabel="emissiondata.pro" index="6">
+<position info="not_deleted" x="571" y="0"/>
+</item>
+<item historyLabel="emissiondata.pro" index="6">
+<position info="not_deleted" x="569" y="0"/>
+</item>
+<item historyLabel="emissiondata.pro" index="6">
+<position info="not_deleted" x="211" y="0"/>
+</item>
+<item historyLabel="emissiondata.pro" index="6">
+<position info="not_deleted" x="605" y="0"/>
+</item>
+<item historyLabel="phys_quantity.pro" index="2">
+<position info="not_deleted" x="928" y="0"/>
+</item>
+<item active="true" historyLabel="emissiondata.pro" index="6">
+<position info="not_deleted" x="0" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -344,50 +337,50 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" name="emissiondata.pro" tooltip="Default/emissiondata.pro">
+<persistable path="/Default/emissiondata.pro"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" name="arraydims.pro" tooltip="/home/adrian/IDLWorkspace85/Misc/arraydims.pro">
+<persistable uri="file:/home/adrian/IDLWorkspace85/Misc/arraydims.pro"/>
+</file>
 <file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" name="magpie_data.pro" tooltip="/home/adrian/IDLWorkspace85/idljw/ijwkim/jw_routines/idl_magpie/magpie_data.pro">
 <persistable uri="file:/home/adrian/IDLWorkspace85/idljw/ijwkim/jw_routines/idl_magpie/magpie_data.pro"/>
 </file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" name="mkfig.pro" tooltip="/home/adrian/IDLWorkspace85/idljw/haitao_IDL/Default/mkfig.pro">
-<persistable uri="file:/home/adrian/IDLWorkspace85/idljw/haitao_IDL/Default/mkfig.pro"/>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" name="phys_quantity.pro" tooltip="/home/adrian/IDLWorkspace85/idljw/ijwkim/jw_routines/idl_magpie/phys_quantity.pro">
+<persistable uri="file:/home/adrian/IDLWorkspace85/idljw/ijwkim/jw_routines/idl_magpie/phys_quantity.pro"/>
 </file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" name="tek_color.pro" tooltip="/usr/local/exelis/idl85/lib/tek_color.pro">
-<persistable uri="file:/usr/local/exelis/idl85/lib/tek_color.pro"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" name="radialavg.pro" tooltip="Default/radialavg.pro">
+<persistable path="/Default/radialavg.pro"/>
 </file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" name="mkfig.pro" tooltip="/home/adrian/IDLWorkspace85/idljw/clive/common/mkfig.pro">
-<persistable uri="file:/home/adrian/IDLWorkspace85/idljw/clive/common/mkfig.pro"/>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" name="legend.pro" tooltip="/home/adrian/IDLWorkspace85/idljw/ycghim/Hungary_BES_code/FLIPP/legend.pro">
+<persistable uri="file:/home/adrian/IDLWorkspace85/idljw/ycghim/Hungary_BES_code/FLIPP/legend.pro"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" name="overplotresults.pro" tooltip="Default/overplotresults.pro">
-<persistable path="/Default/overplotresults.pro"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" name="magpie_profile_radial.pro" tooltip="Default/magpie_profile_radial.pro">
+<persistable path="/Default/magpie_profile_radial.pro"/>
 </file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" name="magpie_profile_6.pro" tooltip="/home/adrian/IDLWorkspace85/idljw/work/magpie_profile_6.pro">
-<persistable uri="file:/home/adrian/IDLWorkspace85/idljw/work/magpie_profile_6.pro"/>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" name="flux_profiles.pro" tooltip="/home/adrian/IDLWorkspace85/Magpie Field/flux_profiles.pro">
+<persistable uri="file:/home/adrian/IDLWorkspace85/Magpie%20Field/flux_profiles.pro"/>
 </file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" name="ycplot.pro" tooltip="/home/adrian/IDLWorkspace85/idljw/ycghim/yc_routines/ycplot.pro">
-<persistable uri="file:/home/adrian/IDLWorkspace85/idljw/ycghim/yc_routines/ycplot.pro"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" name="magpie_profile_radial_avg.pro" tooltip="Default/magpie_profile_radial_avg.pro">
-<persistable path="/Default/magpie_profile_radial_avg.pro"/>
-</file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" name="magpie_field.pro" tooltip="/home/adrian/IDLWorkspace85/Magpie Field/magpie_field.pro">
-<persistable uri="file:/home/adrian/IDLWorkspace85/Magpie%20Field/magpie_field.pro"/>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" name="fluxFull.pro" tooltip="/home/adrian/IDLWorkspace85/Magpie Field/fluxFull.pro">
+<persistable uri="file:/home/adrian/IDLWorkspace85/Magpie%20Field/fluxFull.pro"/>
 </file>
 <file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" name="particleBalance.pro" tooltip="/home/adrian/IDLWorkspace85/Magpie Field/particleBalance.pro">
 <persistable uri="file:/home/adrian/IDLWorkspace85/Magpie%20Field/particleBalance.pro"/>
 </file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" name="magpie_coils.pro" tooltip="/home/adrian/IDLWorkspace85/idljw/haitao_IDL/Default/MAGPIE/Field/magpie_coils.pro">
-<persistable uri="file:/home/adrian/IDLWorkspace85/idljw/haitao_IDL/Default/MAGPIE/Field/magpie_coils.pro"/>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" name="classical_diffusion.pro" tooltip="/home/adrian/IDLWorkspace85/Magpie Field/classical_diffusion.pro">
+<persistable uri="file:/home/adrian/IDLWorkspace85/Magpie%20Field/classical_diffusion.pro"/>
 </file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" name="magpie_field.pro" tooltip="/home/adrian/IDLWorkspace85/idljw/haitao_IDL/Default/MAGPIE/Field/magpie_field.pro">
-<persistable uri="file:/home/adrian/IDLWorkspace85/idljw/haitao_IDL/Default/MAGPIE/Field/magpie_field.pro"/>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" name="balanceProfile.pro" tooltip="/home/adrian/IDLWorkspace85/Magpie Field/balanceProfile.pro">
+<persistable uri="file:/home/adrian/IDLWorkspace85/Magpie%20Field/balanceProfile.pro"/>
 </file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" name="magpie_field_structure.pro" tooltip="/home/adrian/IDLWorkspace85/Magpie Field/magpie_field_structure.pro">
-<persistable uri="file:/home/adrian/IDLWorkspace85/Magpie%20Field/magpie_field_structure.pro"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" name="datapoints.pro" tooltip="Default/datapoints.pro">
+<persistable path="/Default/datapoints.pro"/>
 </file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" name="flow_profile_mode_on.pro" tooltip="/home/adrian/IDLWorkspace85/idljw/work/flow_profile_mode_on.pro">
-<persistable uri="file:/home/adrian/IDLWorkspace85/idljw/work/flow_profile_mode_on.pro"/>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" name="mkfig.pro" tooltip="/home/adrian/IDLWorkspace85/idljw/haitao_IDL/Default/mkfig.pro">
+<persistable uri="file:/home/adrian/IDLWorkspace85/idljw/haitao_IDL/Default/mkfig.pro"/>
 </file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" name="all_profile.pro" tooltip="/home/adrian/IDLWorkspace85/idljw/work/all_profile.pro">
-<persistable uri="file:/home/adrian/IDLWorkspace85/idljw/work/all_profile.pro"/>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.rsi.idldt.proeditor.ProEditor" name="legend.pro" tooltip="/home/adrian/IDLWorkspace85/idljw/clive/common/legend.pro">
+<persistable uri="file:/home/adrian/IDLWorkspace85/idljw/clive/common/legend.pro"/>
 </file>
 </mruList>
 </workbench>

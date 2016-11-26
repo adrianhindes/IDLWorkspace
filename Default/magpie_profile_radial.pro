@@ -12,7 +12,7 @@ pro magpie_profile_radial
   
   
   setNum =  2;1 2 or 3
-  start_shot = 7438
+  start_shot = 7558
   
   points_num = 18 ;18*3 (3 measurements per angle), total 54 measurements
   if start_shot ge 7214 then begin

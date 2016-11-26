@@ -26,7 +26,7 @@ set1 = reverse(set1)
 set3 = reverse(set3)
 set5 = reverse(set5)
 
-argonShot=[6826,6907]
+argonShot=[6826,6934]
 argonz=['No Mode','Mode on']
 
 title1 = '3KW RF Hydrogen at 4.2mTorr'

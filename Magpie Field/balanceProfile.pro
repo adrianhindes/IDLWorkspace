@@ -4,7 +4,7 @@ z_length = 1444
 norm_z = 1443.0
 diam = 130
 norm_r = 129.0
-stop
+
 r=(indgen(diam)/norm_r)*6 -2.8  ;4cm radius
 z=(indgen(z_length)/norm_z)*120 -60 ;60cm
 
@@ -18,7 +18,7 @@ endfor
 for j=0, 130-1 do begin
   zz[*,j]=z[*]
 endfor
-stop
+
 y=1
 n=0
 s_coils_active = [n,y,y,y,y]
@@ -28,10 +28,10 @@ source_c = 50
 rnorm = -0.2
 
 flux = fluxFull(s_coils_active, m_coils_active, mirror_c, source_c, rr, zz)
-stop
+
 ;Keep Tube length Constant
 startL = 0
-endL = 10
+endL = 20 ;cm
 
 length = startL - endL ;cm
 length = length * 1E-2
@@ -45,7 +45,7 @@ bval = (mean(flux.b_mod[z1_index,*]) + mean(flux.b_mod[z1_index,*]))/2.
 fluxIndices = 30
 flux_tracking = indgen(fluxIndices)
 flux_tracking = flux_tracking + 1
-stop
+
 area = fltarr(fluxIndices)
 dA = area
 radii1 = area
@@ -81,7 +81,7 @@ dN = 1.2E17 ;from Jaweook's data
 
 ;Neutral parameters
 press = 0.13332237
-temp = 5000
+temp = 5000 ;(kelvin)
 n_n = (press)/(!const.k*temp)
 
 ;Create Structure for Balance Function
@@ -119,11 +119,11 @@ stop
 rhs = andvzarray + nvdaarray + avdnarray + perpLossArray
 
 ratio = rhs/ionization
-
+window,1
 plot,radii2,ratio
 
 
-stop
+
 
 ;Now loop through different lengths of annular regions
 
@@ -151,22 +151,22 @@ AvdNArray2[i] = balance.avdn
 perpLossArray2[i] = balance.perpLoss
 end
 
-stop
+
 
 rhs2 = andvzarray2 + nvdaarray2 + avdnarray2 + perpLossArray2
 
 ratio2 = rhs2/ionization2
-
+window,2
 plot,endLengths,ratio2
 
-stop
 
+window,3
 imgplot,Flux.Flux,z,r,xr=[0,60],xsty=1,/cb,xtitle='Axis(cm)',ytitle='Radius(cm)',title='Magnetic flux'
 coil_pos = [-0.72, -0.54, -0.36, -0.18, 0., 0.264, 0.317,0.390, 0.443, 0.496, 0.549, 0.602]*100 ; cm
 for i=0,n_elements(coil_pos)-1 do oplot,coil_pos(i)*[1,1],!y.crange,col=(i le 4) ? 2 : 3
 plot, z, Flux.B_mod(*,60), title='Magnetic amplitude(T)',xtitle='Axis(cm)',ytitle='Magnetic amplitude(T)',xrange=[0,60]
 struct={flux:Flux.Flux, bz:Flux.Bz, btot:Flux.B_mod, br:Flux.Br}
 
-stop
+
 
 end
