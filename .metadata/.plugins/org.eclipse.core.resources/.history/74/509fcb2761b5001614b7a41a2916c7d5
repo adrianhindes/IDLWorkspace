@@ -2,21 +2,13 @@ pro emissionData
 
 path='/media/adrian/Elements/camware'
 cd,path
-
 shot = '41'
-backShot = '55' ;f/11
+shotLength = 50. ;ms
+shotLength = 0.001.*shotLength
+
+backShot = '55'
+
 backShotLength = 5. ;seconds
-shotNo = fix(shot)
-if shotNo ge 45 then begin
-  backShot = '56' ;f/5.6
-endif
-if shotNo ge 48 then begin
-  backShot = '54' ;f/22
-endif
-
-shotLength = exposureTime(shotNo)*0.001
-
-
 
 timeScale = shotLength/backShotLength
 

@@ -14,7 +14,9 @@ if shotNo ge 48 then begin
   backShot = '54' ;f/22
 endif
 
-shotLength = exposureTime(shotNo)*0.001
+
+shotLength = 50. ;ms
+shotLength = 0.001*shotLength
 
 
 

@@ -1,12 +1,15 @@
-pro emissionData
+function emissionValue, shotNo
 
 path='/media/adrian/Elements/camware'
 cd,path
 
-shot = '41'
+
+shot = string(shotNo, FORMAT='(I2.2)')
+
+
 backShot = '55' ;f/11
-backShotLength = 5. ;seconds
-shotNo = fix(shot)
+backShotLength = 5. ;seconds (all calbration shots had same length; yay no more lookup tables!)
+
 if shotNo ge 45 then begin
   backShot = '56' ;f/5.6
 endif
@@ -53,6 +56,6 @@ ionizationRate = mean(emission)
 
 
 
-stop
+return,ionizationRate
 
 end

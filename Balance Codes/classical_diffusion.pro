@@ -1,4 +1,9 @@
-function classical_diffusion, b, te, ti, vte, vti, n_i, del_ni, mi
+function classical_diffusion, b, te, ti, n_i, del_ni, mi
+
+
+;Thermal Velocities
+vti=sqrt(2*!const.e*ti/mi) ;ion thermal vel
+vte = sqrt(2*!const.e*te/!const.me)
 
 ;Collisional Cross Sections
 sigma_H =100 * (1d-10)^2; for hydrogen

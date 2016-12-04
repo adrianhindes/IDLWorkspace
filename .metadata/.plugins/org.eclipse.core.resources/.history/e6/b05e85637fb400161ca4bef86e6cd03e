@@ -2,27 +2,19 @@ pro emissionData
 
 path='/media/adrian/Elements/camware'
 cd,path
-
 shot = '41'
-backShot = '55' ;f/11
-backShotLength = 5. ;seconds
-shotNo = fix(shot)
-if shotNo ge 45 then begin
-  backShot = '56' ;f/5.6
-endif
-if shotNo ge 48 then begin
-  backShot = '54' ;f/22
-endif
+shotLength = 50 ;ms
+shotLength = 0.001*shotLength
 
-shotLength = exposureTime(shotNo)*0.001
+backShot = '55'
 
-
+backShotLength = 5 ;seconds
 
 timeScale = shotLength/backShotLength
 
 background = read_tiff(backShot+'.tif') ;calibration
 shotImage = read_tiff(shot+'.tif')
-
+stop
 background = background * timeScale
 ;Calculation
 emission = shotImage/background
@@ -30,9 +22,9 @@ emission = shotImage/background
 
 radiance = 3.617E15*4.*!pi
 ;fwhm = 3E-9 of filter
-ionPathL = 0.05 ;size of plasma, meters
-sxb = 10.
-emission = radiance*3.*emission*sxb/ionPathL
+ionPathL = 0.05 ;size of plasma
+sxb = 10
+emission = radiance*3*emission*sxb/ionPathL
 
 ;Emission is the ionization rate
 ;Take the mean of 10x10 central values
@@ -41,7 +33,7 @@ emission = radiance*3.*emission*sxb/ionPathL
 xCentral = indgen(10,start=695)
 yCentral = indgen(10,start=515)
 averagingArray = fltarr(10,10)
-for i = 0, 9 do begin
+for i = 0, 9 do beg
   x = xCentral[i]
   for j = 0, 9 do begin
     y = yCentral[j]
